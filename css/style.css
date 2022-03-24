@@ -841,3 +841,29 @@ textarea{
     display: flex;
     justify-content: space-evenly;
 }
+
+/* Animaciones */
+.div-pink-g{
+    background-image: linear-gradient( var(--pink), var(--white) );
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 0;
+}
+
+h3{
+    transition: 1,5s;
+}
+
+h3:hover{
+    font-weight: 700;
+}
+
+.boton{
+    transition: 1s;
+}
+
+.boton:hover{
+    border: var(--pink) 2px solid;
+    background-color: var(--white);
+    color: var(--pink);
+}
