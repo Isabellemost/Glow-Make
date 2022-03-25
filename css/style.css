@@ -14,11 +14,11 @@ html{
   box-sizing: border-box;
 }
 
-*, 
-*:before, 
+*,
+*:before,
 *:after {
   box-sizing: inherit;
-} 
+}
 
 *{
     margin: 0;
@@ -52,19 +52,19 @@ h1{
     font-weight: 700;
     text-transform: uppercase;
   }
-  
+
 h2{
     font-size: 1.5rem;
     font-weight: 300;
 }
-  
+
 h3{
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
     font-weight: 500;
     text-transform: uppercase;
 }
-  
+
 h4{
     font-size: 1rem;
     font-weight: 300;
@@ -345,7 +345,7 @@ ul{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: 
+    grid-template-areas:
         "header"
         "main"
         "tendencias-imagen"
@@ -418,7 +418,7 @@ ul{
 
                             "footer footer footer footer";
     }
-    
+
 }
 
 
@@ -427,7 +427,7 @@ ul{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: 
+    grid-template-areas:
                         "header"
 
                         "uno"
@@ -467,7 +467,7 @@ ul{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: 
+    grid-template-areas:
                         "header"
                         "aside"
                         "main"
@@ -556,15 +556,6 @@ ul{
 .nav-black{
     background-color: var(--black);
     font-family: 'Playfair Display', serif;
-    text-align: center;
-}
-
-@media (min-width: 768px) {
-    .nav-black-flex{
-        display: flex;
-        gap: 5rem;
-        padding: 2rem 0;
-    }
 }
 
 /* Footer */
@@ -646,8 +637,20 @@ ul{
 }
 
 .tendencia-imagen{
-    width: 50%;
+  max-width: 50%
 }
+
+  @media (min-width: 768px) {
+      .tendencia-imagen{
+      max-width: 100%;
+      }
+  }
+
+  @media (min-width: 1200px) {
+      .tendencia-imagen{
+      max-width: 50%;
+      }
+  }
 
 .referencia{
     text-align: center;

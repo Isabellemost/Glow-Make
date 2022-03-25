@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Glow make</title>
+	<!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<!-- Hacer la carga mas rapida -->
 	<link rel="preload" href="css/style.css" as="style">
 	<!-- Hoja de estilos -->
@@ -22,11 +24,11 @@
 		<header class="header">
 
 			<!-- Caja pink -->
-			<div class="div-pink-g">
+			<div class="div-pink">
 				<h2>50% de descuento en nuestros cursos redimibles en productos</h2>
 			</div>
 
-			<!-- Nav 1 -->
+			<!-- Yo nav 1 -->
 			<nav class="nav-white contenedor">
 				<div>
 					<a href="index.html">
@@ -49,25 +51,51 @@
 				</div>
 			</nav>
 
-			<!-- Nav 2 -->
-			<nav class="nav-black">
-				<ul class="contenedor nav-black-flex">
-					<li><a class="a-blanco" href="index.html">Inicio</a></li>
-					<li><a class="a-blanco" href="#tendencias">Tendencias</a></li>
-					<li><a class="a-blanco" href="cursos.html">Cursos</a></li>
-					<li><a class="a-blanco" href="productos.html">Productos</a></li>
-					<li><a class="a-blanco" href="nosotros.html">Nosotros</a></li>
-					<li><a class="a-blanco" href="contacto.html">Contacto</a></li>
-				</ul>
+			<!-- Nav 2 B -->
+			<nav class="navbar navbar-expand-md nav-black pd-dos-cero">
+			  <div class="container-fluid contenedor">
+			    <a class="nav-link active a-pink" aria-current="page" href="index.html">Inicio</a>
+			    <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			      <span class="navbar-toggler-icon light"></span>
+			    </button>
+			    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			      <div class="navbar-nav">
+			        <a class="nav-link a-blanco" href="#tendencias">Tendencias</a>
+			        <a class="nav-link a-blanco" href="cursos.html">Cursos</a>
+			        <a class="nav-link a-blanco" href="productos.html">Productos</a>
+							<a class="nav-link a-blanco" href="nosotros.html">Nosotros</a>
+			        <a class="nav-link a-blanco" href="contacto.html">Contacto</a>
+			      </div>
+			    </div>
+			  </div>
 			</nav>
-			
-			<!-- Imagen grande header -->
-			<div>
-				<img src="imagenes/header.jpg" alt="Banner publicitatio de glow make" width="100%">
+
+			<!-- Carrusel imagenes -->
+			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+			  <div class="carousel-indicators">
+			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			  </div>
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			      <img src="imagenes/header-uno.jpg" class="d-block w-100" alt="Banner publicitario de maquillaje">
+			    </div>
+			    <div class="carousel-item">
+			      <img src="imagenes/header-dos.jpg" class="d-block w-100" alt="Banner de make up">
+			    </div>
+			  </div>
+			  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Previous</span>
+			  </button>
+			  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Next</span>
+			  </button>
 			</div>
-			
+
 		</header>
-			
+
 		<!-- Comienza main con la introduccion de las tendencias -->
 		<main class="main contenedor" id="tendencias">
 
@@ -83,7 +111,7 @@
 				</p>
 			</article>
 
-		</main>	
+		</main>
 
 		<!--Div con imagen de tendencias  -->
 		<div class="tendencias-imagen contenedor sin-contenedor">
@@ -96,7 +124,7 @@
 		</div>
 
 		<div class="img-uno contenedor section-tendencia-img">
-			<img src="imagenes/delineado.jpg" alt="Foto de un delineado doble" class="tendencia-imagen">
+			<img src="imagenes/delineado.jpg" alt="Foto de un delineado doble" class="tendencia-imagen img-fluid">
 		</div>
 
 		<div class="dos contenedor tendencia-text">
@@ -115,7 +143,7 @@
 		</div>
 
 		<div class="img-dos contenedor section-tendencia-img">
-			<img src="imagenes/piel.jpg" alt="Foto de una piel luminosa" class="tendencia-imagen">
+			<img src="imagenes/piel.jpg" alt="Foto de una piel luminosa" class="tendencia-imagen img-fluid">
 		</div>
 
 		<div class="cuatro contenedor tendencia-text">
@@ -125,14 +153,14 @@
 				revitalizantes con tu crema hidratante para que tu piel respire sin exceso de producto.
 			</p>
 		</div>
-		
+
 		<!-- 3 divs con tercera tendencia -->
 		<div class="cinco contenedor tendencia-text">
 			<h3>CEJAS ESPONJOSAS</h3>
 		</div>
 
 		<div class="img-tres contenedor section-tendencia-img">
-			<img src="imagenes/cejas.webp" alt="Foto de unas cejas esponjosas" class="tendencia-imagen">
+			<img src="imagenes/cejas.webp" alt="Foto de unas cejas esponjosas" class="tendencia-imagen img-fluid">
 		</div>
 
 		<div class="seis contenedor tendencia-text">
@@ -140,15 +168,15 @@
 				de cara a primavera verano de 2022 veremos cejas esponjosas que puedes conseguir con un lápiz de cejas para
 				lograr un look más definido y voluminoso.
 			</p>
-		</div>	
-		
+		</div>
+
 		<!-- 3 divs con tercera tendencia -->
 		<div class="siete contenedor tendencia-text">
 			<h3>LABIOS ROJOS Y PERFILADOS</h3>
 		</div>
 
 		<div class="img-cuatro contenedor section-tendencia-img">
-			<img src="imagenes/labios.jpg" alt="Foto de una chica con labios rojos" class="tendencia-imagen">
+			<img src="imagenes/labios.jpg" alt="Foto de una chica con labios rojos" class="tendencia-imagen img-fluid">
 		</div>
 
 		<div class="ocho contenedor tendencia-text">
@@ -156,15 +184,15 @@
 				acabado brillo o satinado, bien perfilados y en su versión coral o rojo oscuro. Los perfiladores crean un
 				efecto volumen y un perfilado ideal tanto si los llevas nude como a todo color.
 			</p>
-		</div>	
-			
+		</div>
+
 		<!-- 3 divs con tercera tendencia -->
 		<div class="nueve contenedor tendencia-text">
 			<h3>SOMBRAS DE OJOS DE COLORES VIVOS</h3>
 		</div>
 
 		<div class="img-cinco contenedor section-tendencia-img">
-			<img src="imagenes/sombras.jpg" alt="Maquillaje en colores vivos" class="tendencia-imagen">
+			<img src="imagenes/sombras.jpg" alt="Maquillaje en colores vivos" class="tendencia-imagen img-fluid">
 		</div>
 
 		<div class="diez contenedor tendencia-text">
@@ -172,15 +200,15 @@
 				vivos como los verdes, naranjas y amarillos invitando a que demos rienda suelta a nuestra creatividad y a
 				jugar con nuestras sombras de ojos manteniendo un trazado limpio.
 			</p>
-		</div>	
-			
+		</div>
+
 		<!-- 3 divs con tercera tendencia -->
 		<div class="once contenedor tendencia-text">
 			<h3>STRASS Y APLICACIONES EN LA PIEL</h3>
 		</div>
 
 		<div class="img-seis contenedor section-tendencia-img">
-			<img src="imagenes/strass.jpg" alt="Maquillaje con aplicaciones" class="tendencia-imagen">
+			<img src="imagenes/strass.jpg" alt="Maquillaje con aplicaciones" class="tendencia-imagen img-fluid">
 		</div>
 
 		<div class="doce contenedor tendencia-text">
@@ -188,15 +216,15 @@
 				Costelloe son las aplicaciones de strass sobre la piel, ya sea en la zona de las ojeras o en lo alto de los
 				pómulos como a modo de eyeliner o en el párpado superior.
 			</p>
-		</div>			
-			
+		</div>
+
 		<!-- 3 divs con tercera tendencia -->
 		<div class="trece contenedor tendencia-text">
 			<h3>PIEL GLITTER CON EFECTO WET</h3>
 		</div>
 
 		<div class="img-siete contenedor section-tendencia-img">
-			<img src="imagenes/wet.webp" alt="Maquillaje con piel glitter efecto wet" class="tendencia-imagen">
+			<img src="imagenes/wet.webp" alt="Maquillaje con piel glitter efecto wet" class="tendencia-imagen img-fluid">
 		</div>
 
 		<div class="catorce contenedor tendencia-text">
@@ -204,18 +232,18 @@
 				porque aportan un acabado mojado que da jugosidad, vuelven las texturas metalizadas y glossy y prueba de ellos
 				son las pieles que hemos visto en el desfile de Blumarine como del espacio sideral.
 			</p>
-		</div>			
-			
+		</div>
+
 		<div class="referencia">
 			<p>Tomado de:
 				<a class="a-negro-decoracion" href="https://www.telva.com/belleza/maquillaje/2022/01/24/61ebdc8a01a2f111b88b4664.html" target="_blank"> Telva.com</a>
 			</p>
-		</div>		
+		</div>
 
-		<div class="aprender">
+		<div class="aprender contenedor">
 			<h3 class="text-center pd-botton">APRENDE ESTO Y MAS CON NOSOTROS</h3>
 			<a class="boton boton-primario" href="cursos.html" target="_blank">Cursos</a>
-		</div>		
+		</div>
 
 		<!-- Comienza footer -->
 		<footer class="footer">
@@ -230,7 +258,7 @@
 				<div class="footer-lema">
 					<p>Aprende a resaltar tu belleza desde la magia del maquillaje</p>
 				</div>
-				
+
 				<div class="footer-redes">
 					<h2>SIGUENOS</h2>
 					<div>
@@ -249,14 +277,14 @@
 					</div>
 				</div>
 
-				<div class="footer-mantener"> 
+				<div class="footer-mantener">
 					<h2>MANTEN AL DIA</h2>
 					<p>Suscríbete a nuestro newsletter y recibe las últimas noticias sobre tendencia, promociones y cursos
 					directamente a tu correo electrónico.</p>
 					<form action="" method="post" id="manten" class="pd-top-dos">
 					<label for="email"></label>
 					<input class="input input-primario" type="email" placeholder="Correo electrónico" name="email" id="email">
-					<input class="boton boton-secundario" type="submit" value="Enviar"> 
+					<input class="boton boton-secundario" type="submit" value="Enviar">
 					</form>
 				</div>
 
@@ -265,6 +293,9 @@
 		</footer>
 
 	</div>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
 
