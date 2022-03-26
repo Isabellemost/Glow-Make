@@ -805,54 +805,16 @@ ul{
 }
 
 /* Contacto */
-.form-contacto{
-    width: 100%;
-}
-
-.contenedor-inputs{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
 .input-contacto{
     color: var(--black);
     padding: 1rem;
     margin-bottom: 2rem;
     font-size: 1.5rem;
     font-weight: 500;
-    border: 2px solid var(--black);
-}
-
-.input-mitad{
-    width: 48%;
-}
-
-.input-completo{
-    width: 100%;
-}
-
-textarea{
-    width: 100%;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    border: 2px solid var(--black);
-}
-
-.boton-contacto{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
+    border: 1px solid var(--black);
 }
 
 /* Animaciones */
-.div-pink-g{
-    background-image: linear-gradient( var(--pink), var(--white) );
-    color: var(--white);
-    text-align: center;
-    padding: 2rem 0;
-}
-
 h3{
     transition: 1,5s;
 }

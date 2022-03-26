@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Contacto</title>
+  <!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <!-- Hacer la carga mas rapida -->
 	<link rel="preload" href="css/style.css" as="style">
 	<!-- Hoja de estilos -->
@@ -24,7 +26,7 @@
 		<header class="header">
 
 			<!-- Caja pink -->
-			<div class="div-pink-g">
+			<div class="div-pink">
 				<h2>50% de descuento en nuestros cursos redimibles en productos</h2>
 			</div>
 
@@ -51,67 +53,75 @@
 				</div>
 			</nav>
 
-			<!-- Nav 2 -->
-			<nav class="nav-black">
-				<ul class="contenedor nav-black-flex">
-					<li><a class="a-blanco" href="index.html">Inicio</a></li>
-					<li><a class="a-blanco" href="#tendencias">Tendencias</a></li>
-					<li><a class="a-blanco" href="cursos.html">Cursos</a></li>
-					<li><a class="a-blanco" href="productos.html">Productos</a></li>
-					<li><a class="a-blanco" href="nosotros.html">Nosotros</a></li>
-					<li><a class="a-blanco" href="contacto.html">Contacto</a></li>
-				</ul>
+      <!-- Nav 2 B -->
+			<nav class="navbar navbar-expand-md nav-black pd-dos-cero">
+			  <div class="container-fluid contenedor">
+			    <a class="nav-link active a-pink" aria-current="page" href="contacto.html">Contacto</a>
+			    <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			      <span class="navbar-toggler-icon light"></span>
+			    </button>
+			    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			      <div class="navbar-nav">
+              <a class="nav-link a-blanco" href="index.html">Inicio</a>
+			        <a class="nav-link a-blanco" href="index.html#tendencias">Tendencias</a>
+			        <a class="nav-link a-blanco" href="cursos.html">Cursos</a>
+			        <a class="nav-link a-blanco" href="productos.html">Productos</a>
+							<a class="nav-link a-blanco" href="nosotros.html">Nosotros</a>
+			      </div>
+			    </div>
+			  </div>
 			</nav>
-			
+
 		</header>
-			
+
 		<!-- Comienza main con form -->
 		<main class="main contenedor">
 
-      <label for=""></label>
       <h1 class="pd-dos-cero">CONTACTO</h1>
 
-      <form class="form-contacto" action="" method="post" id="contacto">
-
-		<div class="contenedor-inputs">
-			
-			<label for="nombre"></label>
-			<input class="input-contacto input-mitad" type="text" placeholder="Nombre" name="nombre" id="nombre">
-			  
-			<label for="apellido"></label>
-			<input class="input-contacto input-mitad" type="text" placeholder="Apellido" name="apellido" id="apellido">
-		
-			<label for="email"></label>
-			<input class="input-contacto input-completo" type="email" placeholder="Correo electronico" name="email" id="email">
-		
-			<label for="telefono"></label>
-			<input class="input-contacto input-completo" type="tel" placeholder="Telefono" name="telefono" id="telefono">
-			
-			<select class="input-contacto input-completo" name="desea" id="desea">
-				<option value="que">¿Que desea comunicarnos?</option>
-				<option value="sugerencias">Sugerencias</option>
-				<option value="reclamos">Reclamos</option>
-				<option value="ayuda">Ayuda</option>
-				<option value="otro">Otro</option>
-			</select>
-		
-			<label for="observaciones">Observaciones</label>
-			<textarea name="observaciones"></textarea>
-	
-			<label for="comunique">Deseo que se me comunique por correo electronico</label>
-			<input type="checkbox" name="comunique" value="comunique">
-
-			<div class="pd-top-dos boton-contacto">
-				<input class="boton" type="reset" value="Limpiar">
-				<input class="boton" type="submit" value="Enviar">
-			</div>
-			
-
-		</div>
-        
+      <!-- Form con B -->
+      <form class="row g-3">
+        <div class="col-md-6">
+          <input type="text" class="form-control input-contacto" placeholder="Nombre" aria-label="Nombre">
+        </div>
+        <div class="col-md-6">
+          <input type="text" class="form-control input-contacto" placeholder="Apellido" aria-label="Apellido">
+        </div>
+        <div class="col-12">
+          <input type="email" class="form-control input-contacto" placeholder="Correo electronico" aria-label="Correo electronico">
+        </div>
+        <div class="col-12">
+          <input type="tel" class="form-control input-contacto" placeholder="Telefono" aria-label="Telefono">
+        </div>
+        <div class="col-12">
+          <select class="form-select input-contacto" aria-label="Default select example">
+            <option selected>¿ Que desea comunicarnos ?</option>
+            <option value="1">Sugerencia</option>
+            <option value="2">Reclamo</option>
+            <option value="3">Ayuda</option>
+            <option value="4">Otros</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <label for="exampleFormControlTextarea1" class="form-label parrafo">Observaciones</label>
+          <textarea class="form-control input-contacto" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label parrafo" for="gridCheck">
+              Deseo que se me comunique por correo electronico.
+            </label>
+          </div>
+        </div>
+        <div class="col-12 d-flex justify-content-evenly">
+          <button type="submit" class="btn boton">Limpiar</button>
+          <button type="submit" class="btn boton">Enviar</button>
+        </div>
       </form>
+
     </main>
-  
+
     <div class="img-uno contenedor pd-top-dos">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16289430.30382862!2d-83.38500694420081!3d4.60982630080021
       1!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e15a43aae1594a3%3A0x9a0d9a04eff2a340!2sColombia!5e0!3m2!1ses!
@@ -135,7 +145,7 @@
 				<div class="footer-lema">
 					<p>Aprende a resaltar tu belleza desde la magia del maquillaje</p>
 				</div>
-				
+
 				<div class="footer-redes">
 					<h2>SIGUENOS</h2>
 					<div>
@@ -154,14 +164,14 @@
 					</div>
 				</div>
 
-				<div class="footer-mantener"> 
+				<div class="footer-mantener">
 					<h2>MANTEN AL DIA</h2>
 					<p>Suscríbete a nuestro newsletter y recibe las últimas noticias sobre tendencia, promociones y cursos
 					directamente a tu correo electrónico.</p>
 					<form action="" method="post" id="manten" class="pd-top-dos">
 					<label for="email"></label>
 					<input class="input input-primario" type="email" placeholder="Correo electrónico" name="email" id="email">
-					<input class="boton boton-secundario" type="submit" value="Enviar"> 
+					<input class="boton boton-secundario" type="submit" value="Enviar">
 					</form>
 				</div>
 
@@ -170,6 +180,9 @@
 		</footer>
 
 	</div>
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
 
