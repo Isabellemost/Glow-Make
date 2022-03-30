@@ -6,12 +6,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Glow make</title>
-	<!--  Armonizar la visualización inicial de los navegadores y que corriger algunos errores. -->
-	<link rel="stylesheet" href="css/normalize.css">
-    <link rel="preload" href="css/normalize.css" as="style">
-	<!-- Hacer el citio mas rapido -->
+	<!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<!-- Hacer la carga mas rapida -->
 	<link rel="preload" href="css/style.css" as="style">
-    <link rel="stylesheet" href="css/style.css">
+	<!-- Hoja de estilos -->
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -23,59 +23,66 @@
 		<header class="header">
 
 			<!-- Caja pink -->
-			<div class="div-pink-g">
+			<div class="div-pink">
 				<h2>50% de descuento en nuestros cursos redimibles en productos</h2>
 			</div>
 
-			<!-- Nav 1 -->
-			<nav class="nav-white contenedor">
+			<!-- Nav 1 B -->
+			<nav class="nav container d-flex justify-content-between align-items-center mt-2 mp-2">
 				<div>
-					<a href="index.html">
+					<a class="nav-link" href="index.html">
 						<img src="imagenes/logo.svg" alt="Logo de Glow make" width="50px">
 					</a>
 				</div>
-				<div class="nav-white-navegacion" >
-					<a href="#">
+				<div class="d-flex gap-5">
+					<a class="nav-link" href="#">
 						<img src="imagenes/iniciar.png" alt="Icono de cuenta" width="20px">
 					</a>
-					<a href="#">
+					<a class="nav-link" href="#">
 						<img src="imagenes/chat.png" alt="Icono de comunidad" width="20px">
 					</a>
-					<a href="#">
+					<a class="nav-link" href="#">
 						<img src="imagenes/corazon.png" alt="Icono de lo que te ha gustado" width="20px">
 					</a>
-					<a href="#">
+					<a class="nav-link">
 						<img src="imagenes/carrito.png" alt="Icono de carrito de compras" width="20px">
 					</a>
 				</div>
 			</nav>
 
-			<!-- Nav 2 -->
-			<nav class="nav-black">
-				<ul class="contenedor nav-black-flex">
-					<li><a class="a-blanco" href="index.html">Inicio</a></li>
-					<li><a class="a-blanco" href="#tendencias">Tendencias</a></li>
-					<li><a class="a-blanco" href="cursos.html">Cursos</a></li>
-					<li><a class="a-blanco" href="productos.html">Productos</a></li>
-					<li><a class="a-blanco" href="nosotros.html">Nosotros</a></li>
-					<li><a class="a-blanco" href="contacto.html">Contacto</a></li>
-				</ul>
+			<!-- Nav 2 B -->
+			<nav class="navbar navbar-expand-md nav-black pd-dos-cero">
+			  <div class="container">
+			    <a class="nav-link active a-pink" aria-current="page" href="cursos.html">Cursos</a>
+			    <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			      <span class="navbar-toggler-icon light"></span>
+			    </button>
+			    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			      <div class="navbar-nav">
+					<a class="nav-link a-blanco" href="index.html">Inicio</a>
+			        <a class="nav-link a-blanco" href="#tendencias">Tendencias</a>
+			        <a class="nav-link a-blanco" href="productos.html">Productos</a>
+					<a class="nav-link a-blanco" href="nosotros.html">Nosotros</a>
+			        <a class="nav-link a-blanco" href="contacto.html">Contacto</a>
+			      </div>
+			    </div>
+			  </div>
 			</nav>
 			
 		</header>
 			
 		<!-- Comienza primer curso -->
-		<div class="uno contenedor">
+		<div class="uno container">
 			<h3 class="pd-dos-cero">CURSO DE AUTOMAQUILLAJE</h3>
 			<p>En este curso vas a encontrar los conocimientos necesarios para realizar el maquillaje más apropiado para ti,
 			teniendo en cuenta las características de tu rostro.</p>
 		</div>
 
-		<div class="img-uno contenedor">
-			<img class="pd-dos-cero" src="imagenes/auto.jpg" alt="Chica aprendiendose a maquillar" width="100%">
+		<div class="img-uno container">
+			<img class="pd-dos-cero img-fluid" src="imagenes/auto.jpg" alt="Chica aprendiendose a maquillar">
 		</div>
 
-		<div class="dos contenedor">
+		<div class="dos container">
 			<table class="curso-ofrece">
 				<tr>
 					<th class="subtitulo pd-right-dos">¿QUE INCLUYE?</th>
@@ -119,22 +126,31 @@
 
 		</div>
 
-		<div class="tres contenedor">
+		<div class="tres container">
 			<p class="p-curso-info">Durante este mes podras redimir la mitad del valor del curso ($150.00) en productos</p>
-			<a class="boton boton-terciario" href="#">Quiero aprender a maquillarme</a>
+			<p>
+				<a class="boton boton-terciario" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+					Quiero aprender a maquillarme
+				</a>
+			</p>
+			  <div class="collapse" id="collapseExample">
+				<div class="card card-body">
+				  Felicitaciones por tu compra, pronto aprenderas como resaltar tu belleza con el maquillaje.
+				</div>
+			  </div>
 		</div> 
 
 		<!-- Comienza segundo curso -->
-		<div class="cuatro contenedor">
+		<div class="cuatro container">
 			<h3 class="pd-dos-cero">CURSO DE AUTOMAQUILLAJE DE TENDENCIAS</h3>
 			<p>En este curso vas a aprender las tendencias de maquillaje del 2022.</p>
 		</div>
 
-		<div class="img-dos contenedor">
-			<img class="pd-dos-cero" src="imagenes/tende.jpg" alt="Chica con labios rojos" width="100%">
+		<div class="img-dos container">
+			<img class="pd-dos-cero img-fluid" src="imagenes/tende.jpg" alt="Chica con labios rojos">
 		</div>
 
-		<div class="cinco contenedor">
+		<div class="cinco container">
 			<table class="curso-ofrece">
 				<tr>
 					<th class="subtitulo pd-right-dos">¿QUE INCLUYE?</th>
@@ -179,16 +195,25 @@
 			</table>
 		</div>
 
-		<div class="seis contenedor">
+		<div class="seis container">
 			<p class="p-curso-info">Durante este mes podras redimir la mitad del valor del curso ($150.00) en productos</p>
-			<a class="boton boton-terciario" href="#">Quiero aprender todas las tendencias</a>
+			<p>
+				<a class="boton boton-terciario" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+					Quiero aprender todas las tendencias
+				</a>
+			</p>
+			  <div class="collapse" id="collapseExample">
+				<div class="card card-body">
+				  Felicitaciones por tu compra, pronto aprenderas como resaltar tu belleza con el maquillaje.
+				</div>
+			  </div>
 		</div>
 
 		<!-- Comienza footer -->
 		<footer class="footer">
 
-			<!-- Div con contenedor y footer -->
-			<div class="contenedor footer-org">
+			<!-- Div con container y footer -->
+			<div class="container footer-org">
 
 				<div class="footer-img">
 					<img src="imagenes/logo-blanco.svg" alt="Logo de Glow make" width="50%">
@@ -232,6 +257,9 @@
 		</footer>
 
 	</div>
+
+	<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
 
