@@ -1,0 +1,16 @@
+// Input
+.input{
+    color: $black;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    border: none;
+    text-decoration: none;
+    background-color: $white;
+}
+
+.input-primario{
+    display: inline;
+    width: $w-60;
+}

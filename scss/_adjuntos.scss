@@ -1,0 +1,64 @@
+// Adjunto blanco con hover pink
+.a-blanco{
+    text-decoration: none;
+    color: $white;
+    &:link{
+        @extend .a-blanco;
+    }
+    &:visited{
+        @extend .a-blanco;
+    }
+    &:active{
+        @extend .a-blanco;
+    }
+    &:hover{
+        font-weight: 700;
+        color: $pink;
+    }
+
+}
+
+// Adjunto negro con decoracion
+.a-negro-decoracion{
+    text-decoration-color: $black;
+    color: $black;
+    &:link{
+        @extend .a-negro-decoracion;
+    }
+    &:visited{
+        @extend .a-negro-decoracion;
+    }
+    &:active{
+        @extend .a-negro-decoracion;
+    }
+    &:hover{
+        text-decoration: $pink;
+        font-weight: 700;
+        color: $pink;
+        text-decoration: none;
+    }
+}
+
+// Adjunto pink con hover 700
+.a-pink{
+    text-decoration: none;
+    color: $pink;
+    &:hover{
+        font-weight: 700;
+        color: $pink;
+    }
+}
+
+// No decoracion
+.a-none{
+    text-decoration: none;
+    &:link{
+        @extend .a-none;
+    }
+    &:visited{
+        @extend .a-none;
+    }
+    &:active{
+        @extend .a-none;
+    }
+}

@@ -1,0 +1,108 @@
+// Grid areas
+.header{
+    grid-area: header;
+}
+
+.aside{
+    grid-area: aside;
+}
+
+.main{
+    grid-area: main;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+// Contenedor
+.contenedor-productos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+                        "header"
+                        "aside"
+                        "main"
+                        "footer";
+}
+
+@media (min-width: 768px){
+    .contenedor-productos{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: auto;
+        grid-template-areas: "header header"
+                            "aside main"
+                            "footer footer";
+    }
+}
+
+// Aside
+.aside{
+    h1{
+        @media (min-width: 925px) and (max-width: 768px) {
+            font-size: 2.5rem;
+        }
+    }
+}
+.productos-categorias{
+    color: $pink;
+    list-style: none;
+}
+
+// centrar productos
+.centrar-productos{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+// Texto
+.nombre-producto{
+    font-family: $fontSecundary;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.producto-precio{
+    font-family: $fontMain;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+// Estrella
+.div-estrellas{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.estrellas{
+    display: inline-block;
+    background-size: cover;
+    width: auto;
+    height: 1.3rem;
+    margin-right: 1rem;
+}
+
+// Favorito
+.favorite{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 1rem;
+    background: white;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    cursor: pointer;
+    &:hover{
+        background: $pink;
+    }
+    &:hover svg{
+        fill: $white;
+    }
+}

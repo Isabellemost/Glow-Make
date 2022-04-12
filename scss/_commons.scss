@@ -1,0 +1,54 @@
+// Paleta de colores
+$black: rgb(0, 0, 0);
+$white: rgb(255, 255, 255);
+$pink: rgb(255, 0, 108);
+
+// Width
+$w-100: 100%;
+$w-75: 75%;
+$w-60: 60%;
+$w-50: 50%;
+$w-40: 40%;
+$w-30: 30%;
+$w-25: 25%;
+$w-10: 10%;
+
+// width espacial
+.w-100-75{
+    width: 100%;
+    @media (min-width: 768px) {
+            width: 75%;
+    }
+}
+
+// Quitar borde
+.b-none{
+    border: none;
+}
+
+// padding
+.pd-botton{
+    padding-bottom: 2rem;
+}
+
+.pd-top-dos{
+    padding-top: 2rem;
+}
+.pd-dos-cero{
+    padding: 2rem 0;
+}
+
+// text transform
+$text-tra: text-transform;
+
+// map con text transform
+$text-tra: (
+    'mayuscula' : uppercase,
+    'minuscula' : lowercase,
+);
+
+// Mixin para tipografia
+@mixin texto ($font-size, $font-weight) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+}

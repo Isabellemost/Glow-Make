@@ -5,19 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Productos</title>
+  <title>Productos Glow make</title>
+  <!-- SEO -->
+  <meta name="description" content="Encuentra en Glow make maquillaje 100% original a el mejor precio y lo mejor con envio 
+  a todo el mundo">
+  <meta name="keywords" content="maquillaje, comprar, barato, facil, rapido, envios">
+  <meta name="autor" content="Clara Isabel Lemos">
   <!-- Bootstrap -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<!-- Hacer la carga mas rapida -->
-	<link rel="preload" href="css/style.css" as="style">
+	<link rel="preload" href="css/main.css" as="style">
 	<!-- Hoja de estilos -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
   <!-- Div para grids -->
-	<div class="contenedor-tres">
+	<div class="contenedor-productos">
 
 		<!-- Comienza header -->
 		<header class="header">
@@ -28,24 +33,24 @@
 			</div>
 
 			<!-- Nav 1 B -->
-			<nav class="nav container d-flex justify-content-between align-items-center mt-2 mp-2">
+			<nav class="nav container d-flex justify-content-between align-items-center flex-nowrap mt-2 mp-2 nav-white">
 				<div>
 					<a class="nav-link" href="index.html">
 						<img src="imagenes/logo.svg" alt="Logo de Glow make" width="50px">
 					</a>
 				</div>
-				<div class="d-flex gap-5">
+				<div class="d-flex gap-auto nav-white-iconos">
 					<a class="nav-link" href="#">
-						<img src="imagenes/iniciar.png" alt="Icono de cuenta" width="20px">
+						<img src="imagenes/iniciar.png" alt="Icono de cuenta">
 					</a>
 					<a class="nav-link" href="#">
-						<img src="imagenes/chat.png" alt="Icono de comunidad" width="20px">
+						<img src="imagenes/chat.png" alt="Icono de comunidad">
 					</a>
 					<a class="nav-link" href="#">
-						<img src="imagenes/corazon.png" alt="Icono de lo que te ha gustado" width="20px">
+						<img src="imagenes/corazon.png" alt="Icono de lo que te ha gustado">
 					</a>
 					<a class="nav-link">
-						<img src="imagenes/carrito.png" alt="Icono de carrito de compras" width="20px">
+						<img src="imagenes/carrito.png" alt="Icono de carrito de compras">
 					</a>
 				</div>
 			</nav>
@@ -60,7 +65,7 @@
 			    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 			      <div class="navbar-nav">
               <a class="nav-link a-blanco" href="index.html">Inicio</a>
-			        <a class="nav-link a-blanco" href="#tendencias">Tendencias</a>
+			        <a class="nav-link a-blanco" href="index.html#tendencias">Tendencias</a>
 			        <a class="nav-link a-blanco" href="cursos.html">Cursos</a>
 							<a class="nav-link a-blanco" href="nosotros.html">Nosotros</a>
 			        <a class="nav-link a-blanco" href="contacto.html">Contacto</a>
@@ -72,9 +77,15 @@
 		</header>
 			
 		<!-- Comienza aside izquierda B -->
-     <aside class="aside contenedor">
+     <aside class="aside container">
       <h1>PRODUCTOS</h1>
+
+      <div>
+
         <ul class="list-group list-group-flush productos-categorias">
+          <li class="list-group-item">
+            <a class="a-pink" href="#"><strong>Todos</strong></a>
+          </li>
           <li class="list-group-item">
             <a class="a-pink" href="#">Cara</a>
           </li>
@@ -91,270 +102,144 @@
             <a class="a-pink" href="#">Cuidado de la piel</a>
           </li>
           <li class="list-group-item">
-            <a class="a-pink" href="#"><strong>Todos</strong></a>
-          </li>
-          <li class="list-group-item">
             <a class="a-pink" href="#">Mejor vendidos</a>
           </li>
         </ul>
+
+      </div>
+        
     </aside>
     <!-- Termina aside izquierda -->
   
-    <!-- Comienza main -->
-    <main class="main contenedor productos-flex">
-  
-      <!-- Div para cada producto -->
-      <div class="producto">
-        <!-- Enlace para ir siempre al producto -->
-        <a class="producto-a a-none" href="#">
-          <!-- Div para parte de imagen con margin -->
-          <div class="producto-div-img">
-            <!-- Imagen del producto -->
-            <img class="producto-img" src="imagenes/diorlabial.jpg" alt="Imagen del labial resplandor adicct de dior">
-          </div>
-          <!-- marca -->
-          <p>Dior</p>
-          <!-- nombre del producto -->
-          <p class="nombre-producto">Dior addict lip glow</p>
-          <!-- colores -->
-          <p>13 Colores</p>
-          <!-- Div para las estrellas -->
-          <div class="div-estrellas">
-            <!-- span con estrellas -->
-            <span class="producto-estrellas">
-              <!-- Imagen de las estrellas -->
-              <img class="estrellas" src="imagenes/stars.svg" alt="Rating del producto">
+    <!-- Main card con B -->
+    <main class="container row row-cols-2 row-cols-md-3 g-4 main centrar-productos pd-top-dos">
+
+      <div class="col">
+        <a href="#" class="a-none">
+          <div class="card h-100 b-none">
+            <img class="card-img-top producto-img" src="imagenes/diorlabial.jpg" alt="Imagen del labial resplandor adicct de dior">
+            <span class="favorite">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"/></svg>
             </span>
-            <!-- Numero de las estrellas -->
-            <span>
-              <p>1.7K</p> 
-            </span>
-          </div>
-          <!-- Precio -->
-          <p class="producto-precio"><b>$35.00</b></p>
-          <!-- Div para aplicar grid -->
-          <div class="producto-lado"></div>
-          <!-- Div para corazon -->
-          <div class="div-corazon">
-            <!-- Boton para corazon -->
-            <button class="lado-boton">
-              <!-- Imagen del corazon -->
-              <img class="corazon" src="imagenes/heart.svg" alt="Corazon para agregar a su lista">
-            </button>
+            <div class="card-body">
+              <p class="card-text">Dior</p>
+              <p class="card-title nombre-producto">Dior addict lip glow</p>
+              <p class="card-text">13 Colores</p>
+              <div class="div-estrellas">
+                  <img class="estrellas" src="imagenes/stars.svg" alt="Rating del producto">
+                  <p class="card-text">1.7K</p> 
+              </div>
+              <p class="producto-precio card-text"><b>$35.00</b></p>
+            </div>
           </div>
         </a>
       </div>
-  
-      <!-- Div para cada producto -->
-      <div class="producto">
-        <!-- Enlace para ir siempre al producto -->
-        <a class="producto-a a-none" href="#">
-          <!-- Div para parte de imagen con margin -->
-          <div class="producto-div-img">
-            <!-- Imagen del producto -->
-            <img class="producto-img" src="imagenes/benefitcejas.jpg" alt="Imagen del gimme brow+">
-          </div>
-          <!-- marca -->
-          <p>Benefit cosmetics</p>
-          <!-- nombre del producto -->
-          <p class="nombre-producto">Gimme brow+ tinted volumizing eyebrow gel</p>
-          <!-- colores -->
-          <p>10 Colores</p>
-          <!-- Div para las estrellas -->
-          <div class="div-estrellas">
-            <!-- span con estrellas -->
-            <span class="producto-estrellas">
-              <!-- Imagen de las estrellas -->
-              <img class="estrellas" src="imagenes/stars.svg" alt="Rating del producto">
+
+      <div class="col">
+        <a href="#" class="a-none">
+          <div class="card h-100 b-none">
+            <img class="card-img-top producto-img" src="imagenes/benefitcejas.jpg" alt="Imagen del gimme brow+">
+            <span class="favorite">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"/></svg>
             </span>
-            <!-- Numero de las estrellas -->
-            <span>
-              <p>5K</p> 
-            </span>
-          </div>
-          <!-- Precio -->
-          <p class="producto-precio"><b>$14.00 - $38.00</b></p>
-          <!-- Div para aplicar grid -->
-          <div class="producto-lado"></div>
-          <!-- Div para corazon -->
-          <div class="div-corazon">
-            <!-- Boton para corazon -->
-            <button class="lado-boton">
-              <!-- Imagen del corazon -->
-              <img class="corazon" src="imagenes/heart.svg" alt="Corazon para agregar a su lista">
-            </button>
+            <div class="card-body">
+              <p class="card-text">Benefit cosmetics</p>
+              <p class="card-title nombre-producto">Gimme brow+ tinted volumizing eyebrow gel</p>
+              <p class="card-text">10 Colores</p>
+              <div class="div-estrellas">
+                  <img class="estrellas" src="imagenes/stars.svg" alt="Rating del producto">
+                  <p class="card-text">5K</p> 
+              </div>
+              <p class="producto-precio card-text"><b>$14.00 - $38.00</b></p>
+            </div>
           </div>
         </a>
       </div>
-  
-      <!-- Div para cada producto -->
-      <div class="producto">
-        <!-- Enlace para ir siempre al producto -->
-        <a class="producto-a a-none" href="#">
-          <!-- Div para parte de imagen con margin -->
-          <div class="producto-div-img">
-            <!-- Imagen del producto -->
-            <img class="producto-img" src="imagenes/anastaciacejas.jpg" alt="Imagen del dipbrow">
-          </div>
-          <!-- marca -->
-          <p>Anastasia beverly hills</p>
-          <!-- nombre del producto -->
-          <p class="nombre-producto">Dipbrow waterproof, smudge proof brow pomade</p>
-          <!-- colores -->
-          <p>11 Colores</p>
-          <!-- Div para las estrellas -->
-          <div class="div-estrellas">
-            <!-- span con estrellas -->
-            <span class="producto-estrellas">
-              <!-- Imagen de las estrellas -->
-              <img class="estrellas" src="imagenes/stars.svg" alt="Rating del producto">
+
+      <div class="col">
+        <a href="#" class="a-none">
+          <div class="card h-100 b-none">
+            <img class="card-img-top producto-img" src="imagenes/anastaciacejas.jpg" alt="Imagen del dipbrow">
+            <span class="favorite">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"/></svg>
             </span>
-            <!-- Numero de las estrellas -->
-            <span> 
-              <p>11K</p> 
-            </span>
-          </div>
-          <!-- Precio -->
-          <p class="producto-precio"><b>$21.00</b></p>
-          <!-- Div para aplicar grid -->
-          <div class="producto-lado"></div>
-          <!-- Div para corazon -->
-          <div class="div-corazon">
-            <!-- Boton para corazon -->
-            <button class="lado-boton">
-              <!-- Imagen del corazon -->
-              <img class="corazon" src="imagenes/heart.svg" alt="Corazon para agregar a su lista">
-            </button>
+            <div class="card-body">
+              <p class="card-text">Anastasia beverly hills</p>
+              <p class="card-title nombre-producto">Dipbrow waterproof, smudge proof brow pomade</p>
+              <p class="card-text">11 Colores</p>
+              <div class="div-estrellas">
+                  <img class="estrellas" src="imagenes/stars.svg" alt="Rating del producto">
+                  <p class="card-text">11K</p> 
+              </div>
+              <p class="producto-precio card-text"><b>$21.00</b></p>
+            </div>
           </div>
         </a>
       </div>
-  
-      <!-- Div para cada producto -->
-      <div class="producto">
-        <!-- Enlace para ir siempre al producto -->
-        <a class="producto-a a-none" href="#">
-          <!-- Div para parte de imagen con margin -->
-          <div class="producto-div-img">
-            <!-- Imagen del producto -->
-            <img class="producto-img" src="imagenes/fentycontorno.jpg" alt="Imagen del match stix matte contour">
-          </div>
-          <!-- marca -->
-          <p>Fenty beauty by Rihanna</p>
-          <!-- nombre del producto -->
-          <p class="nombre-producto">Match stix matte contour skinstick</p>
-          <!-- colores -->
-          <p>7 Colores</p>
-          <!-- Div para las estrellas -->
-          <div class="div-estrellas">
-            <!-- span con estrellas -->
-            <span class="producto-estrellas">
-              <!-- Imagen de las estrellas -->
-              <img class="estrellas" src="imagenes/stars.svg" alt="Rating del producto">
+
+      <div class="col">
+        <a href="#" class="a-none">
+          <div class="card h-100 b-none">
+            <img class="card-img-top producto-img" src="imagenes/fentycontorno.jpg" alt="Imagen del match stix matte contour">
+            <span class="favorite">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"/></svg>
             </span>
-            <!-- Numero de las estrellas -->
-            <span>
-              <p class="producto-precio">1.3K</p> 
-            </span>
-          </div>
-          <!-- Precio -->
-          <p class="producto-precio"><b>$28.00</b></p>
-          <!-- Div para aplicar grid -->
-          <div class="producto-lado"></div>
-          <!-- Div para corazon -->
-          <div class="div-corazon">
-            <!-- Boton para corazon -->
-            <button class="lado-boton">
-              <!-- Imagen del corazon -->
-              <img class="corazon" src="imagenes/heart.svg" alt="Corazon para agregar a su lista">
-            </button>
+            <div class="card-body">
+              <p class="card-text">Fenty beauty by Rihanna</p>
+              <p class="card-title nombre-producto">Match stix matte contour skinstick</p>
+              <p class="card-text">7 Colores</p>
+              <div class="div-estrellas">
+                  <img class="estrellas" src="imagenes/stars.svg" alt="Rating del producto">
+                  <p class="card-text">1.3K</p> 
+              </div>
+              <p class="producto-precio card-text"><b>$28.00</b></p>
+            </div>
           </div>
         </a>
       </div>
-  
-       <!-- Div para cada producto -->
-       <div class="producto">
-        <!-- Enlace para ir siempre al producto -->
-        <a class="producto-a a-none" href="#">
-          <!-- Div para parte de imagen con margin -->
-          <div class="producto-div-img">
-            <!-- Imagen del producto -->
-            <img class="producto-img" src="imagenes/narsbase.jpg" alt="Imagen del light reflection advanced">
-          </div>
-          <!-- marca -->
-          <p>Nars</p>
-          <!-- nombre del producto -->
-          <p class="nombre-producto">Light reflection advanced skincare foundation</p>
-          <!-- colores -->
-          <p>36 Colores</p>
-          <!-- Div para las estrellas -->
-          <div class="div-estrellas">
-            <!-- span con estrellas -->
-            <span class="producto-estrellas">
-              <!-- Imagen de las estrellas -->
-              <img class="estrellas" src="imagenes/stars.svg" alt="Rating del producto">
+
+      <div class="col">
+        <a href="#" class="a-none">
+          <div class="card h-100 b-none">
+            <img class="card-img-top producto-img" src="imagenes/narsbase.jpg" alt="Imagen del light reflection advanced">
+            <span class="favorite">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"/></svg>
             </span>
-            <!-- Numero de las estrellas -->
-            <span>
-              <p>600</p> 
-            </span>
-          </div>
-          <!-- Precio -->
-          <p class="producto-precio"><b>$49.00</b></p>
-          <!-- Div para aplicar grid -->
-          <div class="producto-lado"></div>
-          <!-- Div para corazon -->
-          <div class="div-corazon">
-            <!-- Boton para corazon -->
-            <button class="lado-boton">
-              <!-- Imagen del corazon -->
-              <img class="corazon" src="imagenes/heart.svg" alt="Corazon para agregar a su lista">
-            </button>
+            <div class="card-body">
+              <p class="card-text">Nars</p>
+              <p class="card-title nombre-producto">Light reflection advanced skincare foundation</p>
+              <p class="card-text">36 Colores</p>
+              <div class="div-estrellas">
+                  <img class="estrellas" src="imagenes/stars.svg" alt="Rating del producto">
+                  <p class="card-text">600</p> 
+              </div>
+              <p class="producto-precio card-text"><b>$49.00</b></p>
+            </div>
           </div>
         </a>
       </div>
-  
-       <!-- Div para cada producto -->
-       <div class="producto">
-        <!-- Enlace para ir siempre al producto -->
-        <a class="producto-a a-none" href="#">
-          <!-- Div para parte de imagen con margin -->
-          <div class="producto-div-img">
-            <!-- Imagen del producto -->
-              <img class="producto-img" src="imagenes/narsrubor.jpg" alt="Imagen del blush">
-          </div>
-          <!-- marca -->
-          <p>Nars</p>
-          <!-- nombre del producto -->
-          <p class="nombre-producto">Blush</p>
-          <!-- colores -->
-          <p>25 Colores</p>
-          <!-- Div para las estrellas -->
-          <div class="div-estrellas">
-            <!-- span con estrellas -->
-            <span class="producto-estrellas">
-              <!-- Imagen de las estrellas -->
-              <img class="estrellas" src="imagenes/stars.svg" alt="Rating del producto">
+
+      <div class="col">
+        <a href="#" class="a-none">
+          <div class="card h-100 b-none">
+            <img class="card-img-top producto-img" src="imagenes/narsrubor.jpg" alt="Imagen del blush">
+            <span class="favorite">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"/></svg>
             </span>
-            <!-- Numero de las estrellas -->
-            <span>
-              <p>18K</p> 
-            </span>
-          </div>
-          <!-- Precio -->
-          <p class="producto-precio"><b>$16.00 - $40.00</b></p>
-          <!-- Div para aplicar grid -->
-          <div class="producto-lado"></div>
-          <!-- Div para corazon -->
-          <div class="div-corazon">
-            <!-- Boton para corazon -->
-            <button class="lado-boton">
-              <!-- Imagen del corazon -->
-              <img class="corazon" src="imagenes/heart.svg" alt="Corazon para agregar a su lista">
-            </button>
+            <div class="card-body">
+              <p class="card-text">Nars</p>
+              <p class="card-title nombre-producto">Blush</p>
+              <p class="card-text">25 Colores</p>
+              <div class="div-estrellas">
+                  <img class="estrellas" src="imagenes/stars.svg" alt="Rating del producto">
+                  <p class="card-text">18K</p> 
+              </div>
+              <p class="producto-precio card-text"><b>$16.00 - $40.00</b></p>
+            </div>
           </div>
         </a>
       </div>
-  
+
     </main>
     <!-- Termina main -->
 

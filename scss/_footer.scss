@@ -1,0 +1,53 @@
+// Footer
+.footer{
+    background-color: $black;
+    color: $white;
+    margin-top: 4rem;
+    padding: 2rem 0;
+    p{
+        color: $white;
+    }
+    h2{
+        padding: 1rem 0;
+    }
+}
+
+.footer-org{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-img{
+    width: 33.4%;
+    @media (min-width: 768px) {
+            width: $w-10;
+    }
+    
+}
+
+.footer-lema{
+    width: 33.3%;
+    @media (min-width: 768px) {
+        width: $w-25;
+    }
+}
+
+.footer-redes{
+    width: 33.3%;
+    @media (min-width: 768px) {
+        width: $w-25;
+    }
+    a{
+        text-decoration: none;
+        padding: 1%;
+    }
+}
+
+.footer-mantener{
+    @media (min-width: 768px) {
+        width: $w-40;
+
+    }
+}

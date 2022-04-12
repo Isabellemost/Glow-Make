@@ -1,0 +1,16 @@
+// Animaciones
+h3{
+    transition: 1,5s;
+    &:hover{
+        font-weight: 700;
+    }
+}
+
+.boton{
+    transition: 1s;
+    &:hover{
+        border: $pink 2px solid;
+        background-color: $white;
+        color: $pink;
+    }
+}

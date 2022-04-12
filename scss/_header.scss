@@ -1,0 +1,22 @@
+// Div descuento
+.div-pink{
+    background-color: $pink;
+    color: $white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+// Nav white
+.nav-white-iconos{
+    a{
+        img{
+            width: $w-40;
+        }
+    }
+}
+
+// Nav black
+.nav-black{
+    background-color: $black;
+    font-family: $fontSecundary;
+}

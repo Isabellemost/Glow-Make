@@ -1,0 +1,43 @@
+// Tipografia
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,700;1,300&family=Playfair+Display:wght@400;500;700&display=swap');
+
+$fontMain: 'Open Sans', sans-serif;
+$fontSecundary: 'Playfair Display', serif;
+
+// Encabezados
+h1{
+    font-family: $fontSecundary;
+    @include texto (3rem, 700);
+    text-transform: map-get($map: $text-tra, $key: 'mayuscula')
+  }
+
+h2{
+  @include texto (1.5rem, 300);
+}
+
+h3{
+    font-family: $fontSecundary;
+    @include texto (2rem, 500);
+    text-transform: map-get($map: $text-tra, $key: 'mayuscula')
+}
+
+h4{
+    @include texto (1rem, 300);
+    font-style: italic;
+}
+
+// Parrafos
+.parrafo,
+p{
+  @include texto (1.3rem, 500);
+  color: $black;
+  line-height: auto;
+}
+
+// subtitulo
+.subtitulo{
+  font-family: 'Playfair Display', serif;
+  @include texto (1.5rem, 500);
+  color: $black;
+  text-transform: map-get($map: $text-tra, $key: 'mayuscula')
+}

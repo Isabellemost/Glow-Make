@@ -1,0 +1,98 @@
+// Cursos
+
+// Grid areas cursos
+.header{
+    grid-area: header;
+}
+
+.curso-intro-uno{
+    grid-area: curso-intro-uno;
+}
+
+.img-curso-uno{
+    grid-area: img-curso-uno;
+}
+
+.curso-ofrece-uno{
+    grid-area: curso-ofrece-uno;
+}
+
+.curso-info-uno{
+    grid-area: curso-info-uno;
+}
+
+.curso-promo-uno{
+    grid-area: curso-promo-uno;
+}
+
+.curso-intro-dos{
+    grid-area: curso-intro-dos;
+}
+
+.img-curso-dos{
+    grid-area: img-curso-dos;
+}
+
+.curso-ofrece-dos{
+    grid-area: curso-ofrece-dos;
+}
+
+.curso-info-dos{
+    grid-area: curso-info-dos;
+}
+
+.curso-promo-dos{
+    grid-area: curso-promo-dos;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+// Contenedor
+.contenedor-cursos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+                        "header"
+
+                        "curso-intro-uno"
+                        "img-curso-uno"
+                        "curso-ofrece-uno"
+                        "curso-info-uno"
+                        "curso-promo-uno"
+
+                        "curso-intro-dos"
+                        "img-curso-dos"
+                        "curso-ofrece-dos"
+                        "curso-info-dos"
+                        "curso-promo-dos"
+
+                        "footer";
+    @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: auto;
+        grid-template-areas: "header header"
+
+                            "curso-intro-uno img-curso-uno"
+                            "curso-ofrece-uno img-curso-uno"
+                            "curso-info-uno img-curso-uno"
+                            "curso-promo-uno img-curso-uno"
+
+                            "curso-intro-dos img-curso-dos"
+                            "curso-ofrece-dos img-curso-dos"
+                            "curso-info-dos img-curso-dos"
+                            "curso-promo-dos img-curso-dos"
+                            "footer footer"
+    }
+}
+
+// Estilos
+.p-curso-info{
+    color: $pink;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}

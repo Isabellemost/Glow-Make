@@ -1,0 +1,33 @@
+// Botones
+.boton{
+    color: $white;
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    border: none;
+    text-decoration: none;
+    background-color: $pink;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.boton-primario{
+    display: block;
+    @media (min-width: 768px) {
+            width: $w-50;
+            margin: 0 auto;
+    }
+}
+
+.boton-secundario{
+    display: inline;
+    width: $w-30;
+}
+
+.boton-terciario{
+    display: block;
+}
