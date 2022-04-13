@@ -1,7 +1,7 @@
 {
-  "name": "sass-lemos",
+  "name": "Glow Make",
   "version": "1.0.0",
-  "description": "Desafio Sass I",
+  "description": "Glow make un mundo donde podras aprender del maquillaje y comprarlo",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
