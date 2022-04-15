@@ -303,20 +303,35 @@ h3 {
   grid-template-rows: auto;
   grid-template-areas: "header" "aside" "main" "footer"; }
 
+.navBarProductos {
+  display: block; }
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url(../imagenes/flechaAbajo.png); }
+
+.flecha {
+  background-image: url(../imagenes/flechaAbajo.png); }
+
+.navbar-light .navbar-toggler {
+  border-color: rgba(0, 0, 0, 0); }
+
+.productos-categorias {
+  color: #ff006c;
+  list-style: none;
+  display: none; }
+
 @media (min-width: 768px) {
   .contenedor-productos {
     display: grid;
     grid-template-columns: 20% 80%;
     grid-template-rows: auto;
-    grid-template-areas: "header header" "aside main" "footer footer"; } }
-
-@media (min-width: 925px) and (max-width: 768px) {
-  .aside h1 {
-    font-size: 2.5rem; } }
-
-.productos-categorias {
-  color: #ff006c;
-  list-style: none; }
+    grid-template-areas: "header header" "aside main" "footer footer"; }
+  .navBarProductos {
+    display: none; }
+  .productos-categorias {
+    color: #ff006c;
+    list-style: none;
+    display: block; } }
 
 .centrar-productos {
   justify-content: center;
