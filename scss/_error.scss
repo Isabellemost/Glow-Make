@@ -1,0 +1,15 @@
+// text para error
+main{
+    .oops{
+        font-family: $fontSecundary;
+        color: $pink;
+        @include texto (5rem, 700);
+        padding: 1rem 0;
+    }
+    .mal{
+        font-family: $fontSecundary;
+        color: $pink;
+        @include texto (4rem, 700);
+        padding: 1rem 0;
+    }
+}

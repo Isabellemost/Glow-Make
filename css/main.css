@@ -384,3 +384,17 @@ h3 {
   font-size: 1.5rem;
   font-weight: 500;
   border: 1px solid black; }
+
+main .oops {
+  font-family: "Playfair Display", serif;
+  color: #ff006c;
+  font-size: 5rem;
+  font-weight: 700;
+  padding: 1rem 0; }
+
+main .mal {
+  font-family: "Playfair Display", serif;
+  color: #ff006c;
+  font-size: 4rem;
+  font-weight: 700;
+  padding: 1rem 0; }
